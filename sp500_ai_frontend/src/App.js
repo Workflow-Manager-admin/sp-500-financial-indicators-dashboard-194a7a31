@@ -18,29 +18,18 @@ function App() {
 
   return (
     <div className="App">
-      <header className="App-header">
-        <button 
-          className="theme-toggle" 
-          onClick={toggleTheme}
-          aria-label={`Switch to ${theme === 'light' ? 'dark' : 'light'} mode`}
-        >
-          {theme === 'light' ? '🌙 Dark' : '☀️ Light'}
-        </button>
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <p>
-          Current theme: <strong>{theme}</strong>
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+      <header
+        className="App-header"
+        style={{
+          color: '#fb1313',
+          fontFamily: "Palatino, 'Palatino Linotype', serif",
+          fontWeight: 'bold',
+          backgroundColor: 'rgba(31, 43, 65, 1)',
+          fontSize: '1.145rem',
+          textAlign: 'center',
+        }}
+      >
+        S&P 500 TRACKER
       </header>
     </div>
   );
